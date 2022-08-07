@@ -59,6 +59,11 @@ class ScoreViewController: UIViewController {
         let controller = DetailsViewController.loadController(with: score)
         navigationController?.pushViewController(controller, animated: true)
     }
+    
+    @IBAction func refresh(_ sender: Any) {
+        self.viewModel.getScore()
+    }
+    
 }
 
 extension ScoreViewController: LaunchScore {

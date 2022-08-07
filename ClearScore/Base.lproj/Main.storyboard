@@ -29,7 +29,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTp-00-MpP">
-                                        <rect key="frame" x="62" y="93" width="127" height="65"/>
+                                        <rect key="frame" x="62" y="92" width="127" height="66"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="66" id="Eab-RH-ijY"/>
                                         </constraints>
@@ -70,6 +70,12 @@
                     </view>
                     <navigationItem key="navigationItem" title="Dashboard" id="qUL-fq-g8b">
                         <barButtonItem key="backBarButtonItem" title="back" id="wKI-cU-U30"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="OdP-An-4l8">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="refresh:" destination="BYZ-38-t0r" id="5os-UD-iMy"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="cicleView" destination="gOA-gH-Fl3" id="hgI-Lf-4X5"/>
@@ -78,7 +84,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="902" y="120"/>
+            <point key="canvasLocation" x="821" y="123"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="99V-ov-fIS">
